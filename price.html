@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="price.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+    <div id="nav-list">
+        <img src="logo.png">
+        <ul>
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="login.html">account</a></li>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </ul>
+    </div>
+    <div id="container">
+        <div class="left">
+            <img id ="main" src="RedStore_Img/images/gallery-1.jpg" alt="">
+            <div id="mode">
+                <div class="mode1"><img src="RedStore_Img/images/gallery-1.jpg" alt="" class="samll-img"></div>
+                <div class="mode1"><img src="RedStore_Img/images/gallery-2.jpg" alt="" class="samll-img"></div>
+                <div class="mode1"><img src="RedStore_Img/images/gallery-3.jpg" alt="" class="samll-img"></div>
+                <div class="mode1"> <img src="RedStore_Img/images/gallery-4.jpg" alt="" class="samll-img"></div>
+            </div>
+            
+        </div>
+        <div class="right">
+            <div id="content">
+            <p>T-shirt</p>
+            <h1>Red T-Shirt Printed by ZXR</h1>
+            <p>$1000</p>
+            <select>
+                <option>Select size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Medium</option>
+                <option>Select size</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="add">Add to cart</a>
+            <h4>Product details</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia modi explicabo tempora ab, cumque accusantium quaerat quasi recusandae incidunt et!</p>
+        </div>
+        
+        </div>
+    </div>
+    <script>
+        var mainpic = document.getElementById("main");
+        var smallpic = document.getElementsByClassName("samll-img");
+          
+        smallpic[0].onclick=function(){
+            mainpic.src= smallpic[0].src;
+         }
+         smallpic[1].onclick=function(){
+            mainpic.src= smallpic[1].src;
+         }
+         smallpic[2].onclick=function(){
+            mainpic.src= smallpic[2].src;
+         }
+         smallpic[3].onclick=function(){
+            mainpic.src= smallpic[3].src;
+         }
+         
+    </script>
+</body>
+</html>
