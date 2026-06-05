@@ -27,9 +27,11 @@
                 
                 <hr id="indicate">
                 <div class="fill">
-                    <input type="text" placeholder="username" name="name">
-                    <input type="password" placeholder="password" name="password">
-                    <button type="submit"> login</button>   
+                    <form onsubmit="checkValidate()">
+                    <input type="text" placeholder="username" name="name" id="name">
+                    <input type="password" placeholder="password" name="password" id="pass">
+                    <button type="submit"> login</button> 
+                    </form>  
                 </div> 
     <span>If you want to <a href="register.html">Register</a><span>               
             </div>         
@@ -39,6 +41,23 @@
         </div>
         </div>
     </div>
- 
+ <script>
+   function checkValidate(){
+    let name= document.getElementById("name").value;
+    let pass= document.getElementById("pass").value;
+     
+    if(name===""){
+        alert("Name can't be empty");
+        return false;
+    }
+    if(pass.length<6){
+        alert("Password must be atleast 6 characters");
+        return false;
+    }
+    else{
+        alert("login successfully");
+    }
+   }
+ </script>
 </body>
 </html>
